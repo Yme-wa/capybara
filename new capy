@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dancing Capybara with Taco</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    .bounce-slow {
+      animation: bounce-slow 2s infinite;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-lime-100 to-yellow-200 flex flex-col items-center justify-center h-screen">
+
+  <h1 class="text-4xl font-bold text-green-800 mb-6">¡Baile del Capibara! 🦫🌮🇲🇽</h1>
+
+  <!-- Capybara SVG -->
+  <div class="bounce-slow">
+    <svg viewBox="0 0 300 300" class="w-[300px] h-[300px]" xmlns="http://www.w3.org/2000/svg">
+      <!-- Tail -->
+      <path d="M40 220 Q30 240 50 230" fill="#a67c52" />
+      
+      <!-- Body -->
+      <ellipse cx="150" cy="180" rx="80" ry="70" fill="#a67c52" />
+      
+      <!-- Legs -->
+      <ellipse cx="110" cy="240" rx="15" ry="20" fill="#8c6239"/>
+      <ellipse cx="190" cy="240" rx="15" ry="20" fill="#8c6239"/>
+      
+      <!-- Head -->
+      <ellipse cx="200" cy="120" rx="40" ry="35" fill="#a67c52"/>
+      
+      <!-- Nose -->
+      <circle cx="225" cy="120" r="5" fill="#5a3c20"/>
+      
+      <!-- Eye -->
+      <circle cx="215" cy="110" r="6" fill="black" />
+      
+      <!-- Ear -->
+      <ellipse cx="185" cy="95" rx="6" ry="10" fill="#8c6239" />
+      
+      <!-- Taco -->
+      <path d="M90 160 Q70 180 100 190 Q130 180 110 160 Z" fill="#ffcc66" stroke="#b5651d" stroke-width="2" />
+      <circle cx="95" cy="170" r="4" fill="red" />
+      <circle cx="105" cy="175" r="4" fill="green" />
+      <circle cx="100" cy="165" r="4" fill="brown" />
+
+      <!-- Arm holding taco -->
+      <path d="M120 160 Q90 160 90 180" stroke="#8c6239" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+      <!-- Sombrero -->
+      <path d="M180 80 Q200 60 220 80 Q200 85 180 80" fill="#f4c542" stroke="#b57f1f" stroke-width="2"/>
+      <rect x="195" y="50" width="10" height="20" fill="#b57f1f"/>
+
+    </svg>
+  </div>
+
+  <p class="text-lg text-red-600 mt-6">¡Olé! Viva la fiesta capibara 🎉</p>
+
+</body>
+</html>
